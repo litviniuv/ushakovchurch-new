@@ -340,7 +340,7 @@ a:hover {
 }
 
 .prose {
-  max-width: 72ch;
+  max-width: none;
   overflow-wrap: anywhere;
 }
 
@@ -473,6 +473,61 @@ a:hover {
 
 .site-footer p {
   margin: 0.3rem 0;
+}
+
+@media (max-width: 700px) {
+  .header-bar {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0 0.35rem;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+
+  .brand > span {
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 32px;
+    flex-shrink: 0;
+    padding: 0.06rem;
+  }
+
+  .brand-name {
+    font-size: 0.9rem;
+    line-height: 1.15;
+  }
+
+  .brand-place {
+    margin-top: 0;
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .header-tools {
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.28rem;
+    width: 8.6rem;
+    max-width: 44%;
+  }
+
+  .a11y-toggle,
+  .menu-toggle {
+    font-size: 0.78rem;
+    line-height: 1.15;
+    padding: 0.32rem 0.45rem;
+    min-height: 2.05rem;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 @media (min-width: 640px) {
