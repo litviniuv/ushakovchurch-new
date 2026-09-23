@@ -529,6 +529,11 @@ a:hover {
     white-space: normal;
     text-align: center;
   }
+
+  .menu-toggle {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -555,6 +560,69 @@ a:hover {
   .footer-grid {
     grid-template-columns: 1.4fr 0.8fr;
     align-items: end;
+  }
+}
+
+html.nav-open,
+html.nav-open body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+html.nav-open body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  html.nav-open .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .js .site-nav.is-open {
+    display: block;
+    position: fixed;
+    z-index: 45;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    background: var(--navy);
+    color: #f6f1e7;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+
+  .menu-toggle {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-list {
+    padding-bottom: 1.25rem;
+  }
+
+  .nav-list > li > a,
+  .submenu a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    overflow-wrap: anywhere;
+  }
+
+  .submenu {
+    padding: 0 0 0.2rem 0.35rem;
   }
 }
 
@@ -657,7 +725,8 @@ html.a11y body {
 }
 
 html.a11y .site-header,
-html.a11y .site-footer {
+html.a11y .site-footer,
+html.a11y .site-nav.is-open {
   background: #fff;
   color: #000;
   border-color: #000;
