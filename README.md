@@ -1,5 +1,7 @@
 # ushakovchurch-new
 
-Сайт храма святого праведного воина Феодора Ушакова.
+Сайт храма святого праведного воина Феодора Ушакова на проспекте Королёва в Санкт-Петербурге.
 
-Static mirror of the new design of https://ushakovchurch.ru. Site files live at the repository root (`index.html`).
+Статические файлы лежат в корне репозитория и рассчитаны на GitHub Pages: ветка `main`, папка `/`.
+
+Адрес публикации: https://litviniuv.github.io/ushakovchurch-new/
