@@ -342,8 +342,6 @@ a:hover {
 .prose {
   max-width: none;
   text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
   overflow-wrap: anywhere;
 }
 
