@@ -341,6 +341,9 @@ a:hover {
 
 .prose {
   max-width: none;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   overflow-wrap: anywhere;
 }
 
@@ -388,11 +391,6 @@ a:hover {
 .banner-sheet,
 .calendar-sheet {
   margin: 0.4rem 0 1rem;
-}
-
-.map-sheet,
-.banner-sheet {
-  max-width: 1120px;
 }
 
 .calendar-sheet {
@@ -559,22 +557,6 @@ a:hover {
   .footer-grid {
     grid-template-columns: 1.4fr 0.8fr;
     align-items: end;
-  }
-}
-
-/* 1120px column plus the 2rem inset. Wider viewports grow the frame instead of adding side bands. */
-@media (min-width: 1152px) {
-  .wrap {
-    width: calc(100% - 2rem);
-  }
-
-  .home-top.wrap {
-    width: min(1120px, calc(100% - 2rem));
-  }
-
-  article.page .schedule {
-    max-width: 1120px;
-    margin-inline: auto;
   }
 }
 
