@@ -420,7 +420,7 @@ a:hover {
 .contact-map iframe {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 500px;
   height: 400px;
   border: 0;
 }
